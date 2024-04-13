@@ -1,24 +1,15 @@
 body {
   background-image: url("https://wallpapercave.com/wp/wp2578580.jpg");
 }
-
-.logo {
-  max-width: 50%;
-}
-
-.imagen_inicio {
-  display: flex;
-}
-
 /* On smaller resolutions, hide the text for Large screens */
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 580px) {
   .largeScreen {
     display: none;
   }
 }
 
 /* On larger resolutions, hide the text for Small screens */
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 580px) {
   .smallScreen {
     display: none;
   }
