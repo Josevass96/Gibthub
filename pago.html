@@ -8,7 +8,7 @@
     <!--Bootstrap-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xbox</title>
+    <title>Portal de pago</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -92,87 +92,63 @@
         </nav>
     </div>
     <!-- Barra de navegacion pantallas pequeñas -->
-    <h1 class="text-center p-3">Catalogo Xbox</h1>
-     <!-- Tabla de productos -->
-     <div class="row p-3">
-        <div class="col">
-            <a href="producto.html">
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th><img class="mx-auto d-block" src="img/placeholder.png" alt=""></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="text-center">Producto</td>
-                        </tr>
-                        <tr>
-                            <td class="text-center">Precio</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </a>
-        </div>
-        <div class="col">
-            <a href="producto.html">
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th><img class="mx-auto d-block" src="img/placeholder.png" alt=""></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="text-center">Producto</td>
-                        </tr>
-                        <tr>
-                            <td class="text-center">Precio</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </a>
-        </div>
-        <div class="col">
-            <a href="producto.html">
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th><img class="mx-auto d-block" src="img/placeholder.png" alt=""></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="text-center">Producto</td>
-                        </tr>
-                        <tr>
-                            <td class="text-center">Precio</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </a>
-        </div>
-        <div class="col">
-            <a href="producto.html">
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th><img class="mx-auto d-block" src="img/placeholder.png" alt=""></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="text-center">Producto</td>
-                        </tr>
-                        <tr>
-                            <td class="text-center">Precio</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </a>
-        </div>
+
+    <!--detalle pago-->
+    <div class="col">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th><img class="mx-auto d-block" src="img/placeholder.png" alt=""></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="text-center">Producto</td>
+                </tr>
+                <tr>
+                    <td class="text-center">Precio</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-    <!-- Tabla de productos -->
+    <div class="row">
+        <div class="col p-2"></div>
+        <div class="col p-8">
+            <form action="/action_page.php" class="pt-5">
+                <div class="form-group">
+                    <label for="email">Nombre Completo:</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Direccion:</label>
+                    <input type="password" class="form-control" id="pwd">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Numero de tarjeta:</label>
+                    <input type="password" class="form-control" id="pwd">
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="pwd">Fecha vencimiento:</label>
+                        <input type="password" class="form-control" id="pwd">
+                    </div>
+                    <div class="col">
+                        <label for="pwd">CVV:</label>
+                        <input type="password" class="form-control" id="pwd">
+
+                    </div>
+
+                </div>
+                <div class="container">
+                    <a href="index.html" type="submit" class="btn btn-default float-end">Pagar</a>
+                </div>
+                <div class="container">
+                </div>
+            </form>
+        </div>
+        <div class="col p-2"></div>
+    </div>
+
 </body>
 
 </html>
