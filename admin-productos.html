@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -121,6 +122,443 @@
         </nav>
     </div>
     <!-- Barra de navegacion pantallas pequeñas -->
+    <h1>Administracion de productos</h1>
+    <div class="container">
+        <div class="row flex-lg-nowrap">
+
+            <div class="col">
+                <div class="row flex-lg-nowrap">
+                    <div class="col mb-3">
+                        <div class="e-panel card">
+                            <div class="card-body">
+                                <div class="e-table">
+                                    <div class="table-responsive table-lg mt-3">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th class="align-top">
+                                                        <div
+                                                            class="custom-control custom-control-inline custom-checkbox custom-control-nameless m-0">
+                                                            <input type="checkbox" class="custom-control-input"
+                                                                id="all-items">
+                                                            <label class="custom-control-label" for="all-items"></label>
+                                                        </div>
+                                                    </th>
+                                                    <th>Foto</th>
+                                                    <th class="max-width">Nombre del producto</th>
+                                                    <th>Precio</th>
+                                                    <th>Acciones</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="align-middle">
+                                                        <div
+                                                            class="custom-control custom-control-inline custom-checkbox custom-control-nameless m-0 align-top">
+                                                            <input type="checkbox" class="custom-control-input"
+                                                                id="item-1">
+                                                            <label class="custom-control-label" for="item-1"></label>
+                                                        </div>
+                                                    </td>
+                                                    </td>
+                                                    <td class="align-middle text-center">
+                                                        <div class="bg-light d-inline-flex justify-content-center align-items-center align-top"
+                                                            style="width: 35px; height: 35px; border-radius: 3px;"><i
+                                                                class="fa fa-fw fa-photo" style="opacity: 0.8;"></i>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-nowrap align-middle">Producto</td>
+                                                    <td>$15.990</td>
+                                                    <td class="text-center align-middle">
+                                                        <div class="btn-group align-top">
+                                                            <button type="button" class="btn btn-primary"
+                                                                data-bs-toggle="modal" data-bs-target="#myModal">
+                                                                Editar
+                                                            </button>
+                                                            <button class="btn btn-sm btn-outline-secondary badge"
+                                                                type="button"><i class="fa fa-trash"></i></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="align-middle">
+                                                        <div
+                                                            class="custom-control custom-control-inline custom-checkbox custom-control-nameless m-0 align-top">
+                                                            <input type="checkbox" class="custom-control-input"
+                                                                id="item-2">
+                                                            <label class="custom-control-label" for="item-2"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td class="align-middle text-center">
+                                                        <div class="bg-light d-inline-flex justify-content-center align-items-center align-top"
+                                                            style="width: 35px; height: 35px; border-radius: 3px;"><i
+                                                                class="fa fa-fw fa-photo" style="opacity: 0.8;"></i>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-nowrap align-middle">Producto</td>
+                                                    <td>$15.990</td>
+                                                    <td class="text-center align-middle">
+                                                        <div class="btn-group align-top">
+                                                            <button type="button" class="btn btn-primary"
+                                                                data-bs-toggle="modal" data-bs-target="#myModal">
+                                                                Editar
+                                                            </button>
+                                                            <button class="btn btn-sm btn-outline-secondary badge"
+                                                                type="button"><i class="fa fa-trash"></i></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="align-middle">
+                                                        <div
+                                                            class="custom-control custom-control-inline custom-checkbox custom-control-nameless m-0 align-top">
+                                                            <input type="checkbox" class="custom-control-input"
+                                                                id="item-3">
+                                                            <label class="custom-control-label" for="item-3"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td class="align-middle text-center">
+                                                        <div class="bg-light d-inline-flex justify-content-center align-items-center align-top"
+                                                            style="width: 35px; height: 35px; border-radius: 3px;"><i
+                                                                class="fa fa-fw fa-photo" style="opacity: 0.8;"></i>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-nowrap align-middle">Producto</td>
+                                                    <td>$15.990</td>
+                                                    <td class="text-center align-middle">
+                                                        <div class="btn-group align-top">
+                                                            <button type="button" class="btn btn-primary"
+                                                                data-bs-toggle="modal" data-bs-target="#myModal">
+                                                                Editar
+                                                            </button>
+                                                            <button class="btn btn-sm btn-outline-secondary badge"
+                                                                type="button"><i class="fa fa-trash"></i></button>
+                                                        </div>
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td class="align-middle">
+                                                        <div
+                                                            class="custom-control custom-control-inline custom-checkbox custom-control-nameless m-0 align-top">
+                                                            <input type="checkbox" class="custom-control-input"
+                                                                id="item-4">
+                                                            <label class="custom-control-label" for="item-4"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td class="align-middle text-center">
+                                                        <div class="bg-light d-inline-flex justify-content-center align-items-center align-top"
+                                                            style="width: 35px; height: 35px; border-radius: 3px;"><i
+                                                                class="fa fa-fw fa-photo" style="opacity: 0.8;"></i>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-nowrap align-middle">Producto</td>
+                                                    <td>$15.990</td>
+                                                    <td class="text-center align-middle">
+                                                        <div class="btn-group align-top">
+                                                            <button type="button" class="btn btn-primary"
+                                                                data-bs-toggle="modal" data-bs-target="#myModal">
+                                                                Editar
+                                                            </button>
+                                                            <button class="btn btn-sm btn-outline-secondary badge"
+                                                                type="button"><i class="fa fa-trash"></i></button>
+                                                        </div>
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td class="align-middle">
+                                                        <div
+                                                            class="custom-control custom-control-inline custom-checkbox custom-control-nameless m-0 align-top">
+                                                            <input type="checkbox" class="custom-control-input"
+                                                                id="item-5">
+                                                            <label class="custom-control-label" for="item-5"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td class="align-middle text-center">
+                                                        <div class="bg-light d-inline-flex justify-content-center align-items-center align-top"
+                                                            style="width: 35px; height: 35px; border-radius: 3px;"><i
+                                                                class="fa fa-fw fa-photo" style="opacity: 0.8;"></i>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-nowrap align-middle">Producto</td>
+                                                    <td>$15.990</td>
+                                                    <td class="text-center align-middle">
+                                                        <div class="btn-group align-top">
+                                                            <button type="button" class="btn btn-primary"
+                                                                data-bs-toggle="modal" data-bs-target="#myModal">
+                                                                Editar
+                                                            </button>
+                                                            <button class="btn btn-sm btn-outline-secondary badge"
+                                                                type="button"><i class="fa fa-trash"></i></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="align-middle">
+                                                        <div
+                                                            class="custom-control custom-control-inline custom-checkbox custom-control-nameless m-0 align-top">
+                                                            <input type="checkbox" class="custom-control-input"
+                                                                id="item-6">
+                                                            <label class="custom-control-label" for="item-6"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td class="align-middle text-center">
+                                                        <div class="bg-light d-inline-flex justify-content-center align-items-center align-top"
+                                                            style="width: 35px; height: 35px; border-radius: 3px;"><i
+                                                                class="fa fa-fw fa-photo" style="opacity: 0.8;"></i>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-nowrap align-middle">Producto</td>
+                                                    <td>$15.990</td>
+                                                    <td class="text-center align-middle">
+                                                        <div class="btn-group align-top">
+                                                            <button type="button" class="btn btn-primary"
+                                                                data-bs-toggle="modal" data-bs-target="#myModal">
+                                                                Editar
+                                                            </button>
+                                                            <button class="btn btn-sm btn-outline-secondary badge"
+                                                                type="button"><i class="fa fa-trash"></i></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="align-middle">
+                                                        <div
+                                                            class="custom-control custom-control-inline custom-checkbox custom-control-nameless m-0 align-top">
+                                                            <input type="checkbox" class="custom-control-input"
+                                                                id="item-7">
+                                                            <label class="custom-control-label" for="item-7"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td class="align-middle text-center">
+                                                        <div class="bg-light d-inline-flex justify-content-center align-items-center align-top"
+                                                            style="width: 35px; height: 35px; border-radius: 3px;"><i
+                                                                class="fa fa-fw fa-photo" style="opacity: 0.8;"></i>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-nowrap align-middle">Producto</td>
+                                                    <td>$15.990</td>
+                                                    <td class="text-center align-middle">
+                                                        <div class="btn-group align-top">
+                                                            <button type="button" class="btn btn-primary"
+                                                                data-bs-toggle="modal" data-bs-target="#myModal">
+                                                                Editar
+                                                            </button>
+                                                            <button class="btn btn-sm btn-outline-secondary badge"
+                                                                type="button"><i class="fa fa-trash"></i></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="align-middle">
+                                                        <div
+                                                            class="custom-control custom-control-inline custom-checkbox custom-control-nameless m-0 align-top">
+                                                            <input type="checkbox" class="custom-control-input"
+                                                                id="item-8">
+                                                            <label class="custom-control-label" for="item-8"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td class="align-middle text-center">
+                                                        <div class="bg-light d-inline-flex justify-content-center align-items-center align-top"
+                                                            style="width: 35px; height: 35px; border-radius: 3px;"><i
+                                                                class="fa fa-fw fa-photo" style="opacity: 0.8;"></i>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-nowrap align-middle">Producto</td>
+                                                    <td>$15.990</td>
+                                                    <td class="text-center align-middle">
+                                                        <div class="btn-group align-top">
+                                                            <button type="button" class="btn btn-primary"
+                                                                data-bs-toggle="modal" data-bs-target="#myModal">
+                                                                Editar
+                                                            </button>
+                                                            <button class="btn btn-sm btn-outline-secondary badge"
+                                                                type="button"><i class="fa fa-trash"></i></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="align-middle">
+                                                        <div
+                                                            class="custom-control custom-control-inline custom-checkbox custom-control-nameless m-0 align-top">
+                                                            <input type="checkbox" class="custom-control-input"
+                                                                id="item-9">
+                                                            <label class="custom-control-label" for="item-9"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td class="align-middle text-center">
+                                                        <div class="bg-light d-inline-flex justify-content-center align-items-center align-top"
+                                                            style="width: 35px; height: 35px; border-radius: 3px;"><i
+                                                                class="fa fa-fw fa-photo" style="opacity: 0.8;"></i>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-nowrap align-middle">Producto</td>
+                                                    <td>$15.990</td>
+                                                    <td class="text-center align-middle">
+                                                        <div class="btn-group align-top">
+                                                            <button type="button" class="btn btn-primary"
+                                                                data-bs-toggle="modal" data-bs-target="#myModal">
+                                                                Editar
+                                                            </button>
+                                                            <button class="btn btn-sm btn-outline-secondary badge"
+                                                                type="button"><i class="fa fa-trash"></i></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="align-middle">
+                                                        <div
+                                                            class="custom-control custom-control-inline custom-checkbox custom-control-nameless m-0 align-top">
+                                                            <input type="checkbox" class="custom-control-input"
+                                                                id="item-10">
+                                                            <label class="custom-control-label" for="item-10"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td class="align-middle text-center">
+                                                        <div class="bg-light d-inline-flex justify-content-center align-items-center align-top"
+                                                            style="width: 35px; height: 35px; border-radius: 3px;"><i
+                                                                class="fa fa-fw fa-photo" style="opacity: 0.8;"></i>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-nowrap align-middle">Producto</td>
+                                                    <td>$15.990</td>
+                                                    <td class="text-center align-middle">
+                                                        <div class="btn-group align-top">
+                                                            <button type="button" class="btn btn-primary"
+                                                                data-bs-toggle="modal" data-bs-target="#myModal">
+                                                                Editar
+                                                            </button>
+                                                            <button class="btn btn-sm btn-outline-secondary badge"
+                                                                type="button"><i class="fa fa-trash"></i></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="align-middle">
+                                                        <div
+                                                            class="custom-control custom-control-inline custom-checkbox custom-control-nameless m-0 align-top">
+                                                            <input type="checkbox" class="custom-control-input"
+                                                                id="item-11">
+                                                            <label class="custom-control-label" for="item-11"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td class="align-middle text-center">
+                                                        <div class="bg-light d-inline-flex justify-content-center align-items-center align-top"
+                                                            style="width: 35px; height: 35px; border-radius: 3px;"><i
+                                                                class="fa fa-fw fa-photo" style="opacity: 0.8;"></i>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-nowrap align-middle">Producto</td>
+                                                    <td>$15.990</td>
+                                                    <td class="text-center align-middle">
+                                                        <div class="btn-group align-top">
+                                                            <button type="button" class="btn btn-primary"
+                                                                data-bs-toggle="modal" data-bs-target="#myModal">
+                                                                Editar
+                                                            </button>
+                                                            <button class="btn btn-sm btn-outline-secondary badge"
+                                                                type="button"><i class="fa fa-trash"></i></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="align-middle">
+                                                        <div
+                                                            class="custom-control custom-control-inline custom-checkbox custom-control-nameless m-0 align-top">
+                                                            <input type="checkbox" class="custom-control-input"
+                                                                id="item-12">
+                                                            <label class="custom-control-label" for="item-12"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td class="align-middle text-center">
+                                                        <div class="bg-light d-inline-flex justify-content-center align-items-center align-top"
+                                                            style="width: 35px; height: 35px; border-radius: 3px;"><i
+                                                                class="fa fa-fw fa-photo" style="opacity: 0.8;"></i>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-nowrap align-middle">Producto</td>
+                                                    <td>$15.990</td>
+                                                    <td class="text-center align-middle">
+                                                        <div class="btn-group align-top">
+                                                            <button type="button" class="btn btn-primary"
+                                                                data-bs-toggle="modal" data-bs-target="#myModal">
+                                                                Editar
+                                                            </button>
+                                                            <button class="btn btn-sm btn-outline-secondary badge"
+                                                                type="button"><i class="fa fa-trash"></i></button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <ul class="pagination mt-3 mb-0">
+                                            <li class="disabled page-item"><a href="#" class="page-link">‹</a></li>
+                                            <li class="active page-item"><a href="#" class="page-link">1</a></li>
+                                            <li class="page-item"><a href="#" class="page-link">2</a></li>
+                                            <li class="page-item"><a href="#" class="page-link">3</a></li>
+                                            <li class="page-item"><a href="#" class="page-link">4</a></li>
+                                            <li class="page-item"><a href="#" class="page-link">5</a></li>
+                                            <li class="page-item"><a href="#" class="page-link">›</a></li>
+                                            <li class="page-item"><a href="#" class="page-link">»</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Modal Heading</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form action="/action_page.php">
+                        <div class="mb-3 mt-3">
+                            <label class="form-label">Nombre del producto</label>
+                            <input type="text" class="form-control" id="email" placeholder="Producto" name="">
+                        </div>
+                        <div class="mb-3 mt-3">
+                            <label class="form-label">Foto</label>
+                            <input type="file" class="form-control" id="email" placeholder="Producto" name="">
+                        </div>
+                        <div class="mb-3 mt-3">
+                            <label class="form-label">Precio</label>
+                            <input type="text" class="form-control" id="email" placeholder="$15.990" name="">
+                        </div>
+                        <div class="mb-3 mt-3">
+                            <label class="form-label">Consola</label>
+                            <select class="form-select">
+                                <option>Xbox</option>
+                                <option>Playstation</option>
+                                <option>Nintendo Switch</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Guardar</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
