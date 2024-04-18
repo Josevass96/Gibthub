@@ -8,7 +8,7 @@
     <!--Bootstrap-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrarse</title>
+    <title>Perfil</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -125,50 +125,51 @@
         </nav>
     </div>
     <!-- Barra de navegacion pantallas pequeñas -->
-    <!-- Formulario registro -->
-    <div class="row">
-        <div class="col-md p-md-2"></div>
-        <div class="col-md p-md-8 px-sm-5">
-            <form action="/action_page.php" class="">
-                <div class="form-group">
-                    <label>Nombre:</label>
-                    <input class="form-control">
-                </div>
-                <div class="form-group">
-                    <label>Correo:</label>
-                    <input type="email" class="form-control" id="email">
-                </div>
-                <div class="form-group">
-                    <label>Region:</label>
-                    <input class="form-control">
-                </div>
-                <div class="form-group">
-                    <label>Ciudad:</label>
-                    <input class="form-control">
-                </div>
-                <div class="form-group">
-                    <label>Direccion:</label>
-                    <input class="form-control">
-                </div>
-                <div class="form-group">
-                    <label for="pwd">Contraseña:</label>
-                    <input type="password" class="form-control">
-                </div>
-                <div class="form-group">
-                    <label for="pwd">Confirmar contraseña:</label>
-                    <input type="password" class="form-control">
-                </div>
-                <div class="container">
-                    <a href="index.html" type="submit" class="btn btn-default float-end">Ingresar</a>
-                </div>
-                <div class="container">
-                    <a href="iniciar-sesion.html">¿Ya tienes una cuenta?</a>
-                </div>
-            </form>
-        </div>
-        <div class="col-md p-md-2"></div>
+
+    <div class="mb-3 mt-3">
+        <label class="form-label">Nombre del producto</label>
+        <input type="text" class="form-control" id="email" placeholder="Producto" name="">
     </div>
-    <!-- Formulario registro -->
+    <div class="mb-3 mt-3">
+        <label class="form-label">Foto</label>
+        <input type="file" class="form-control" id="email" placeholder="Producto" name="">
+    </div>
+    <div class="mb-3 mt-3">
+        <label class="form-label">Precio</label>
+        <input type="text" class="form-control" id="email" placeholder="$15.990" name="">
+    </div>
+    <div class="mb-3 mt-3">
+        <label class="form-label">Consola</label>
+        <select class="form-select">
+            <option>Xbox</option>
+            <option>Playstation</option>
+            <option>Nintendo Switch</option>
+        </select>
+    </div>
+    <div>
+        <!-- Button to Open the Modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+            Agregar
+        </button>
+    </div>
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Producto agregado</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
