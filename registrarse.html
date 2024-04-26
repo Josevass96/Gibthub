@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrarse</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -129,34 +130,41 @@
     </div>
     <!-- Barra de navegacion pantallas pequeñas -->
     <!-- Formulario registro -->
-    <div class="row">
+    <div class="row mt-3 animate__animated animate__fadeInUp">
         <div class="col-md p-md-2"></div>
-        <div class="col-md p-md-8 px-sm-5">
-            <form action="/action_page.php" class="">
+        <div class="col-md p-md-8 m-s-3">
+            <form action="index.html" method="get">
                 <div class="form-group">
-                    <label>Nombre:</label>
-                    <input class="form-control">
+                    <label class="form-label" for="idrut">Rut:</label>
+                    <input id="idrut" type="text" class="form-control" onblur="" required>
+                    <div class="invalid-feedback" id="verificacionRut"></div>
                 </div>
                 <div class="form-group">
-                    <label>Correo:</label>
-                    <input type="email" class="form-control" id="email">
+                    <label class="form-label" for="idnombre">Nombre:</label>
+                    <input id="idnombre" type="text" class="form-control" onchange="validarNombre()" required>
+                    <div id="validarNombre"></div>
                 </div>
                 <div class="form-group">
-                    <label>Teléfono:</label>
-                    <input type="email" class="form-control" id="email">
+                    <label class="form-label" for="idemail">Correo:</label>
+                    <input type="email" class="form-control" id="idemail" required onblur="validarEmail()">
+                    <div id="validarCorreo"></div>
                 </div>
-                <div class="mb-3 mt-3">
-                    <label for="email" class="form-label">Region:</label>
-                    <select class="form-select">
+                <div class="form-group">
+                    <label for="telefono" class="form-label">Teléfono:</label>
+                    <input type="telefono" class="form-control" id="telefono">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="region">Region:</label>
+                    <select class="form-select" id="region">
                         <option>--Region--</option>
                         <option>Bio Bio</option>
                         <option>Metropolitana</option>
                         <option> O'Higgins</option>
                     </select>
                 </div>
-                <div class="mb-3 mt-3">
-                    <label for="email" class="form-label">Ciudad:</label>
-                    <select class="form-select">
+                <div class="form-group">
+                    <label for="ciudad" class="form-label">Ciudad:</label>
+                    <select class="form-select" id="ciudad">
                         <option>--Ciudad--</option>
                         <option>Bio Bio</option>
                         <option>Metropolitana</option>
@@ -164,19 +172,19 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label>Direccion:</label>
-                    <input class="form-control">
+                    <label class="form-label" for="direccion">Direccion:</label>
+                    <input class="form-control" id="direccion">
                 </div>
                 <div class="form-group">
-                    <label for="pwd">Contraseña:</label>
-                    <input type="password" class="form-control">
+                    <label class="form-label" for="pass1">Contraseña:</label>
+                    <input type="password" class="form-control" id="pass1">
                 </div>
                 <div class="form-group">
-                    <label for="pwd">Confirmar contraseña:</label>
-                    <input type="password" class="form-control">
+                    <label class="form-label" for="pass2">Confirmar contraseña:</label>
+                    <input type="password" class="form-control" id="pass2">
                 </div>
-                <div class="container">
-                    <a href="index.html" type="submit" class="btn btn-default float-end btn-dark">Registrarse</a>
+                <div class="container mb-3 mt-3">
+                    <button class="btn btn-primary float-end">Registrarse</button>
                 </div>
                 <div class="container">
                     <a href="iniciar-sesion.html">¿Ya tienes una cuenta?</a>
@@ -186,6 +194,7 @@
         <div class="col-md p-md-2"></div>
     </div>
     <!-- Formulario registro -->
+    <script src="js/verificaciones.js"></script>
 </body>
 
 </html>
