@@ -11,6 +11,14 @@
     <title>Registrarse</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!--Scripts-->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/validacionesJQ.js"></script>
+    <script src="js/rellenarSelect.js"></script>
+    <script src="js/messages_es.js"></script>
+    <!--Scripts-->
 </head>
 
 <body>
@@ -133,58 +141,53 @@
     <div class="row mt-3 animate__animated animate__fadeInUp">
         <div class="col-md p-md-2"></div>
         <div class="col-md p-md-8 m-s-3">
-            <form action="index.html" method="get">
+            <form action="index.html" method="get" id="formRegistro">
                 <div class="form-group">
-                    <label class="form-label" for="idrut">Rut:</label>
-                    <input id="idrut" type="text" class="form-control" onblur="" required>
-                    <div class="invalid-feedback" id="verificacionRut"></div>
+                    <label class="form-label" for="rut">Rut:</label>
+                    <input id="rut" type="text" class="form-control" name="rut">
                 </div>
                 <div class="form-group">
-                    <label class="form-label" for="idnombre">Nombre:</label>
-                    <input id="idnombre" type="text" class="form-control" onkeyup="validarNombre(this.value)" required>
-                    <p id="vNombre"></p>
+                    <label class="form-label" for="nombre">Nombre:</label>
+                    <input id="nombre" type="text" class="form-control" name="nombre">
                 </div>
                 <div class="form-group">
-                    <label class="form-label" for="idemail">Correo:</label>
-                    <input type="email" class="form-control" id="idemail" required onkeyup="validarEmail(this.value)"
-                        required>
-                    <p class="" id="resultadoValidacion"></p>
+                    <label class="form-label" for="apellido">Apellido:</label>
+                    <input id="apellido" type="text" class="form-control" name="apellido">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="email">Correo:</label>
+                    <input type="email" class="form-control" id="email" name="email">
                 </div>
                 <div class="form-group">
                     <label for="telefono" class="form-label">Teléfono:</label>
-                    <input type="telefono" class="form-control" id="telefono" required
-                        onkeyup="validarTelefono(this.value)" placeholder="+56911111111">
-                    <p id="vTelefono"></p>
+                    <input type="telefono" class="form-control" id="telefono" name="telefono">
                 </div>
                 <div class="form-group">
                     <label class="form-label" for="region">Region:</label>
-                    <select class="form-select" id="region">
-                        <option>--Region--</option>
-                        <option>Bio Bio</option>
-                        <option>Metropolitana</option>
-                        <option> O'Higgins</option>
+                    <select class="form-select" id="region" name="region">
+                        <option value="0">--Region--</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="ciudad" class="form-label">Ciudad:</label>
-                    <select class="form-select" id="ciudad">
+                    <label for="comuna" class="form-label">Ciudad:</label>
+                    <select class="form-select" id="comuna" name="comuna">
+                        <option value="0">--Comuna--</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <label class="form-label" for="direccion">Direccion:</label>
-                    <input class="form-control" id="direccion">
+                    <input class="form-control" id="direccion" name="direccion">
                 </div>
                 <div class="form-group">
                     <label class="form-label" for="pass1">Contraseña:</label>
-                    <input type="password" class="form-control" id="pass1">
+                    <input type="password" class="form-control" id="pass1" name="pass1">
                 </div>
                 <div class="form-group">
                     <label class="form-label" for="pass2">Confirmar contraseña:</label>
-                    <input type="password" class="form-control" id="pass2" onkeyup="validarContraseña('pass1',this.value)">
-                    <p id="vContraseña"></p>
+                    <input type="password" class="form-control" id="pass2" name="pass2">
                 </div>
                 <div class="container mb-3 mt-3">
-                    <button class="btn btn-primary float-end">Registrarse</button>
+                    <button id="btnRegistro" class="btn btn-primary float-end">Registrarse</button>
                 </div>
                 <div class="container">
                     <a href="iniciar-sesion.html">¿Ya tienes una cuenta?</a>
@@ -194,7 +197,7 @@
         <div class="col-md p-md-2"></div>
     </div>
     <!-- Formulario registro -->
-    <script src="js/verificaciones.js"></script>
+
 </body>
 
 </html>
