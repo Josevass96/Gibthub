@@ -1,6 +1,7 @@
 body {
   background-image: url("https://wallpapercave.com/wp/wp2578580.jpg");
 }
+
 /* On smaller resolutions, hide the text for Large screens */
 @media only screen and (max-width: 576px) {
   .largeScreen {
@@ -13,4 +14,8 @@ body {
   .smallScreen {
     display: none;
   }
+}
+
+.error {
+  color: red;
 }
