@@ -533,39 +533,44 @@
 
                 <!-- Modal body -->
                 <div class="modal-body">
-                    <form action="/action_page.php">
+                    <form action="admin-productos.html" id="formEditar" name="formEditar">
                         <div class="mb-3 mt-3">
-                            <label class="form-label">Nombre del producto</label>
-                            <input type="text" class="form-control" id="email" placeholder="Producto" name="">
+                            <label class="form-label" for="nombreproducto">Nombre del producto</label>
+                            <input type="text" class="form-control" id="nombreproducto" placeholder="Producto"
+                                name="nombreproducto">
                         </div>
                         <div class="mb-3 mt-3">
-                            <label class="form-label">Foto</label>
-                            <input type="file" class="form-control" id="email" placeholder="Producto" name="">
+                            <label class="form-label" for="foto">Foto</label>
+                            <input type="file" class="form-control" id="foto" placeholder="Producto" name="foto">
                         </div>
                         <div class="mb-3 mt-3">
-                            <label class="form-label">Precio</label>
-                            <input type="text" class="form-control" id="email" placeholder="$15.990" name="">
+                            <label class="form-label" for="precio">Precio</label>
+                            <input type="text" class="form-control" id="precio" placeholder="$15.990" name="precio">
                         </div>
                         <div class="mb-3 mt-3">
-                            <label class="form-label">Consola</label>
-                            <select class="form-select">
+                            <label class="form-label" for="consola">Consola</label>
+                            <select class="form-select" id="consola" name="consola">
+                                <option value="0">--Consola--</option>
                                 <option>Xbox</option>
                                 <option>Playstation</option>
                                 <option>Nintendo Switch</option>
                             </select>
                         </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-success">Guardar</button>
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
                     </form>
                 </div>
-
-                <!-- Modal footer -->
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Guardar</button>
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
-                </div>
-
             </div>
         </div>
     </div>
+    <!-- Scripts -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/messages_es.js"></script>
+    <script src="js/validacionEditar.js"></script>
+    <!-- Scripts -->
 </body>
 
 </html>
