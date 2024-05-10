@@ -129,60 +129,69 @@
     </div>
     <!-- Barra de navegacion pantallas pequeñas -->
     <!--detalle pago-->
-    <div class="col">
-        <table class="table table-bordered">
-            <thead>
-                <tr>
-                    <th><img class="mx-auto d-block" src="img/placeholder.png" alt=""></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="text-center">Producto</td>
-                </tr>
-                <tr>
-                    <td class="text-center">Precio</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
     <div class="row">
-        <div class="col p-2"></div>
-        <div class="col p-8">
-            <form action="/action_page.php" class="pt-5">
-                <div class="form-group">
-                    <label for="email">Nombre Completo:</label>
-                    <input type="email" class="form-control" id="email">
-                </div>
-                <div class="form-group">
-                    <label for="pwd">Direccion:</label>
-                    <input type="password" class="form-control" id="pwd">
-                </div>
-                <div class="form-group">
-                    <label for="pwd">Numero de tarjeta:</label>
-                    <input type="password" class="form-control" id="pwd">
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <label for="pwd">Fecha vencimiento:</label>
-                        <input type="password" class="form-control" id="pwd">
-                    </div>
-                    <div class="col">
-                        <label for="pwd">CVV:</label>
-                        <input type="password" class="form-control" id="pwd">
-
-                    </div>
-
-                </div>
-                <div class="container pt-2">
-                    <a href="index.html" type="submit" class="btn btn-default float-end btn-success">Pagar</a>
-                </div>
-                <div class="container">
-                </div>
-            </form>
+        <div class="col"></div>
+        <div class="col">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th><img class="mx-auto d-block" src="img/placeholder.png" alt=""></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-center">Producto</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">Precio</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <div class="col p-2"></div>
-    </div>
+        <div class="col"></div>
+        <div class="row">
+            <div class="col p-2"></div>
+            <div class="col p-8 bg-dark">
+                <form action="/action_page.php" class="pt-5" id="formPago" name="formPago">
+                    <div class="form-group">
+                        <label for="nombre">Nombre Completo:</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="direccion">Direccion:</label>
+                        <input type="text" class="form-control" id="direccion" name="direccion">
+                    </div>
+                    <div class="form-group">
+                        <label for="tarjeta">Numero de tarjeta:</label>
+                        <input type="text" class="form-control" id="tarjeta" name="tarjeta">
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="vencimiento">Fecha vencimiento:</label>
+                            <input type="text" class="form-control" id="vencimiento" name="vencimiento">
+                        </div>
+                        <div class="col">
+                            <label for="cvv">CVV:</label>
+                            <input type="text" class="form-control" id="cvv" name="cvv">
+
+                        </div>
+
+                    </div>
+                    <div class="container pt-2">
+                        <button type="submit" class="btn btn-default float-end btn-success">Pagar</button>
+                    </div>
+                    <div class="container">
+                    </div>
+                </form>
+            </div>
+            <div class="col p-2"></div>
+        </div>
+        <!-- Script -->
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/jquery.validate.js"></script>
+        <script src="js/messages_es.js"></script>
+        <script src="js/validacionPago.js"></script>
+        <!-- Script -->
 
 </body>
 
