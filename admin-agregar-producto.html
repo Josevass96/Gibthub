@@ -128,11 +128,11 @@
         </nav>
     </div>
     <!-- Barra de navegacion pantallas pequeñas -->
-
     <div class="row p-2">
+
         <div class="col"></div>
         <div class="col bg-dark">
-            <form action="index.html" id="formProducto">
+            <form action="admin-agregar-producto.html" id="formProducto">
                 <div class="mb-3 mt-3">
                     <label class="form-label" for="nombreproducto">Nombre del producto</label>
                     <input type="text" class="form-control" id="nombreproducto" placeholder="Producto"
@@ -155,8 +155,8 @@
                         <option value="nintendo switch">Nintendo Switch</option>
                     </select>
                 </div>
-                <div>
-                    <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <div class="float-end">
+                    <button type="submit" class="btn btn-primary" id="btnAgregar">
                         Agregar
                     </button>
                 </div>
@@ -165,23 +165,6 @@
         <div class="col"></div>
     </div>
 
-    <!-- The Modal -->
-    <div class="modal" id="myModal">
-        <div class="modal-dialog">
-            <div class="modal-content">
-
-                <!-- Modal Header -->
-                <div class="modal-header">
-                    <h4 class="modal-title">Producto agregado</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <!-- Modal footer -->
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
 </body>
 <!-- scripts -->
 <script src="js/jquery-3.7.1.min.js"></script>
